@@ -10,7 +10,7 @@ class units():
     check_liquid = ["ml", "l"]
     check_time = ["ms", "s", "min", "hours", "days", "weeks"]
     check_mass = ["mg", "g", "kg"]
-    chech_temp = ["c", "f", "K"]
+    check_temp = ["c", "f", "K"]
             
     
     def length(self):
@@ -296,7 +296,7 @@ if __name__ == "__main__":
             elif any(value in check for value in units.check_mass):
                 converter.mass()
                 
-            elif any(value in check for value in units.chech_temp):
+            elif any(value in check for value in units.check_temp):
                 converter.temp()
                 
             elif any(value in check for value in units.check_time):
